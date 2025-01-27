@@ -281,6 +281,7 @@ body {
     display: grid;
     gap: var(--size-400);
     text-align: center;
+    font-weight: var(--fw-bold);
   }
   .nav-list a {
     color: white;
