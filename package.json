@@ -1,0 +1,16 @@
+{
+  "name": "fem-landing-page",
+  "private": true,
+  "description": "description",
+  "authors": "author",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "main": "pathToMain",
+  "dependencies": {
+    "vite": "^2.9.9"
+  }
+}
