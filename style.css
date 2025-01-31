@@ -235,6 +235,10 @@ p[data-width="wide"] {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
+  /* C T A */
+  .cta {
+    background-image: url();
+  }
 }
 .container {
   --max-width: 1110px;
