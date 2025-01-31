@@ -124,6 +124,13 @@ body {
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
 }
+p:not([class]) {
+  opacity: 0.8;
+  max-width: 32ch;
+}
+p[data-width="wide"] {
+  max-width: 42ch;
+}
 .button {
   cursor: pointer;
   display: inline-flex;
