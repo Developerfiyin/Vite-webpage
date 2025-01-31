@@ -118,12 +118,6 @@ svg {
 /* WINDOWS + SHIFT + C = COLOR PICKER ON FIGMA*/
 /*utility classes */
 
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
 /*general styling */
 body {
   font-size: var(--fs-body);
@@ -242,12 +236,18 @@ body {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
-:adhere(.flow :not(:first-child)) {
+:where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
 }
 .even-columns {
   display: grid;
   gap: 1rem;
+}
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 .visually-hidden {
   position: absolute;
