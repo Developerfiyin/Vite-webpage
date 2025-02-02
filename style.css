@@ -235,16 +235,8 @@ p[data-width="wide"] {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
-  /* C T A */
-  .cta::before {
-    background-image: url(bg-tablet-pattern.svg);
-    content: "";
-    background-color: red;
-    z-index: -1;
-    inset: 0;
-    position: absolute;
-  }
 }
+
 .container {
   --max-width: 1110px;
   --padding: 1rem;
@@ -271,7 +263,22 @@ p[data-width="wide"] {
 :where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
 }
+.cta {
+  position: relative;
 
+  isolation: isolate;
+}
+/* C T A */
+.cta::before {
+  z-index: -1;
+  background-image: url(bg-tablet-pattern.svg);
+  content: "";
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-position: -15rem -5rem;
+  inset: 0;
+  position: absolute;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
