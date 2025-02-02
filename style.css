@@ -236,8 +236,13 @@ p[data-width="wide"] {
     display: none;
   }
   /* C T A */
-  .cta {
-    background-image: url();
+  .cta::before {
+    background-image: url(bg-tablet-pattern.svg);
+    content: "";
+    background-color: red;
+    z-index: -1;
+    inset: 0;
+    position: absolute;
   }
 }
 .container {
