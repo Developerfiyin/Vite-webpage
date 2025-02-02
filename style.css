@@ -257,14 +257,14 @@ p[data-width="wide"] {
 .vertical-align-center {
   align-items: center;
 }
-@media (min-width: 50em) {
-  .vertical-align-center-md {
-    align-items: center;
-  }
-}
 
 .justify-self-end {
   justify-self: end;
+}
+@media (min-width: 50em) {
+  .justify-self-end-md {
+    justify-self: end;
+  }
 }
 :where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
