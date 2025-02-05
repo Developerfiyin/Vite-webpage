@@ -236,6 +236,14 @@ p[data-width="wide"] {
     display: none;
   }
 }
+.footer-nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.footer-nav a:is(:hover, :focus) {
+  color: var(--clr-primary-400);
+}
 
 .container {
   --max-width: 1110px;
